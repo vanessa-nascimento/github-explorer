@@ -1,12 +1,12 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //injeta o javascript no nosso projeto sem precisar colocar no index.html 
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'); //para não resetar os estados com refresh da pagina
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     mode: isDevelopment ? 'development' : 'production',
-    devtool: isDevelopment ? 'eval-source-map' : 'source-map', //ajuda para debug para ambiente de desenvolvimento
+    devtool: isDevelopment ? 'eval-source-map' : 'source-map',
     entry: path.resolve(__dirname, 'src', 'index.jsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),

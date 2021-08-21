@@ -2,6 +2,7 @@ section.repository-list {
     margin: 40px;
 
     h1 {
+        font-size: 30px;
         margin-bottom: 16px;
     }
 
@@ -11,7 +12,13 @@ section.repository-list {
         li {
             & + li {
                 margin-top: 20px;
+                padding-top: 20px;
+                border-top: 1px solid #eee;
             }
+        }
+
+        span {
+            font-weight: bold;
         }
 
         p {
